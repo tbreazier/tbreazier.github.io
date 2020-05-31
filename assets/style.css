@@ -27,7 +27,6 @@ header {
 }
 
 header h1{
-    background-color: var(--tertiary-color);
     display: inline block;
     font-weight: bold;
     font-size: 36px;
@@ -50,20 +49,17 @@ header nav ul li a{
 }
 
 .hero{
-    background-image: url("./images/header-background.jpg");
+    background-image: url("./images/header-background-2.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;
 }
 
-.self-portrait img {
+.self-portrait img{
     width: 50%;
     height: 35%;
-    position: relative;
-    border-radius: 75%;
 }
