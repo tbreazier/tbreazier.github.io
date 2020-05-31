@@ -12,6 +12,21 @@
     --body-color: #d1cdcd;
 }
 
+.flex-row {
+    margin-bottom: 25px;
+    display: flex;
+
+}
+
+.primary-border {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
 body {
     background-color: var(--body-color);
     color: var(--primary-color);
@@ -19,12 +34,22 @@ body {
 }
 
 header {
-
+    padding: auto;
     background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+header a {
+    color: var(--primary-color);
+    transition: ease-in;
+}
+  
+header a:hover {
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+}  
 
 header h1{
     display: inline block;
@@ -32,12 +57,12 @@ header h1{
     font-size: 36px;
     color: var(--primary-color);
     margin: 0;
-    padding: 10px 10px 10px 40px;
+    padding: 15px 15px 15px 30px;
 }
 
 header nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
@@ -53,13 +78,106 @@ header nav ul li a{
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: 100%;
+    height: auto;
+    padding: 25px 25px 25px 30px;
 }
 
 .self-portrait img{
     width: 50%;
     height: 35%;
+    border-radius: 25%;
+}
+
+.hero-content {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    align-items: flex-end;
+}
+
+.hero-content h2 {
+    align-self: flex-end;
+}
+
+.container {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 50px 25px 100px 25px;
+}
+
+.title {
+    text-align: right;
+    padding-right: 15px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.second-title {
+    padding-left: 11.5px;
+}
+
+.text-content p {
+    flex: 75%;
+}
+
+.about-me {
+    flex: 75%;
+}
+
+.work-sample {
+    flex: 75%;
+}
+
+.contact-me {
+    flex: 75%;
+}
+
+.run-img {
+    flex: 75%;
+}
+
+.project-1 {
+    background: url(./images/run-buddy.png) no-repeat center/cover;
+}
+
+.project-2 {
+    background: url(./images/toms-blog.png) no-repeat center/cover;
+}
+
+.img-grid {
+    flex: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 150px;   
+    grid-gap: 10px;
+    padding-left: 15px;
+}
+
+.work-img {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+}
+
+.work-img h4 {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+}
+
+.run-project {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+}
+
+.blog-project {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
 }
