@@ -44,6 +44,7 @@ header {
 header a {
     color: var(--primary-color);
     transition: ease-in;
+    text-decoration: underline;
 }
   
 header a:hover {
@@ -85,10 +86,20 @@ header nav ul li a{
     padding: 25px 25px 25px 30px;
 }
 
-.self-portrait img{
-    width: 50%;
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 15px;
+}
+.self-portrait {
+    width: 35%;
     height: 35%;
     border-radius: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
 }
 
 .hero-content {
@@ -99,6 +110,7 @@ header nav ul li a{
 
 .hero-content h2 {
     align-self: flex-end;
+    text-align: center;
 }
 
 .container {
@@ -110,7 +122,7 @@ header nav ul li a{
 
 .title {
     text-align: right;
-    padding-right: 15px;
+    padding-right: 45px;
     margin-bottom: 30px;
     font-size: 25px;
 }
@@ -119,8 +131,13 @@ header nav ul li a{
     padding-left: 11.5px;
 }
 
+.third-title {
+    padding: 10px;
+    text-align: left;
+}
 .text-content p {
     flex: 75%;
+    padding-left: 15px;
 }
 
 .about-me {
@@ -164,7 +181,7 @@ header nav ul li a{
 }
 
 .work-img h4 {
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     background-color: var(--primary-color);
 }
 
@@ -177,7 +194,51 @@ header nav ul li a{
 
 .blog-project {
     display: flex;
-    align-items: flex-end;
-    height: 100%;
+    align-items: flex-start;
+    height: 75%;
+    width: 75%;
     position: relative;
 }
+
+footer li {
+    justify-content: space-evenly;
+}
+footer a:hover {
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+}  
+
+footer a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 760px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+      flex-direction: column;
+      padding-bottom: auto;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+}  
