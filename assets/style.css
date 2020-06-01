@@ -203,6 +203,7 @@ img{
 footer li {
     justify-content: space-evenly;
 }
+
 footer a:hover {
     color: var(--primary-color);
     background: var(--tertiary-color);
@@ -213,6 +214,7 @@ footer a {
     text-decoration: none;
     color: var(--primary-color);
 }
+
 
 @media screen and (max-width: 760px) {
     header {
