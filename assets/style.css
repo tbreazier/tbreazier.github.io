@@ -84,6 +84,7 @@ header nav ul li a{
     background-position: 100%;
     height: auto;
     padding: 25px 25px 25px 30px;
+    text-align: center;
 }
 
 img{
@@ -161,7 +162,7 @@ img{
 }
 
 .project-2 {
-    background: url(./images/toms-blog.png) no-repeat center/cover;
+    background: url(./images/board-at-home.png) no-repeat center/cover;
 }
 
 .img-grid {
@@ -192,7 +193,7 @@ img{
     position: relative;
 }
 
-.blog-project {
+.group-project {
     display: flex;
     align-items: flex-start;
     height: 75%;
@@ -200,8 +201,12 @@ img{
     position: relative;
 }
 
+.contact-info {
+    flex-direction: row;
+}
 footer li {
     justify-content: space-evenly;
+    flex-direction: rowgit ;
 }
 
 footer a:hover {
