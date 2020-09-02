@@ -153,12 +153,10 @@ img{
     flex: 75%;
 }
 
-.run-img {
-    flex: 75%;
-}
+
 
 .project-1 {
-    background: url(./images/run-buddy.png) no-repeat center/cover;
+    background: url(./images/Simple-social.png) no-repeat center/contain;
 }
 
 .project-2 {
